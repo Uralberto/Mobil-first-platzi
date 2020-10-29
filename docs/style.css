@@ -420,7 +420,6 @@ color: #757575;
 }
 
 
-
 /* ////////////////////////////////////////////////////////////// */
 
 /* Reto de la clase */
@@ -433,18 +432,21 @@ color: #757575;
     width: 900px;
     height: 316px;
     /* justify-content: space-between; */
-    overflow-x: scroll;
+    /* overflow-x: scroll;
     overscroll-behavior-x: contain;
-    scroll-snap-type: x proximity;
+    scroll-snap-type: x proximity; */
     /* también se pone un scroll en contenedro hjo de las tarjetas. Ver mas abajo */
     
     }
-    
     
     /* ///////////////////////////////////////////////////////////// */
     
    
 .plans-container--cards{
+  /* overflow-x: scroll; */
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x proximity;
+
   position: relative;  
   scroll-snap-align: center;
   /* este escroll por que hay otro scroll en el padre */
